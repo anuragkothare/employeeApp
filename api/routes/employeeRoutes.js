@@ -1,9 +1,9 @@
 'use strict';
 module.exports = function(app) {
-  var employee = require('../controllers/employeeController');
-//   console.log(employee.create_a_task)
+  let employee = require('../controllers/employeeController');
 
-  // todoList Routes
+
+
   app.route('/v1/employees')
     .get(employee.list_all_employees)
     

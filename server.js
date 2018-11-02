@@ -1,4 +1,4 @@
-var express = require('express'),
+let express = require('express'),
   app = express(),
   port = process.env.PORT || 3000,
   mongoose = require('mongoose'),
@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 
 
-var routes = require('./api/routes/employeeRoutes');
+let routes = require('./api/routes/employeeRoutes');
 routes(app);
 
 
